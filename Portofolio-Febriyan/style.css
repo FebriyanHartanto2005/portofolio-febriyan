@@ -1,0 +1,327 @@
+/* ===== RESET & DASAR ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== HEADER & NAV ===== */
+header {
+    background-color: #1b2a4a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #cfd8dc;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #64b5f6;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background-color: #1b2a4a;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px 100px;
+}
+
+.foto-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #64b5f6;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.05rem;
+    color: #b0bec5;
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #64b5f6;
+    color: #1b2a4a;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.tombol:hover {
+    background-color: #90caf9;
+}
+
+/* ===== SECTION UMUM ===== */
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #1b2a4a;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #64b5f6;
+    margin: 10px auto 0;
+}
+
+/* ===== TENTANG ===== */
+.tentang article {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.05rem;
+    color: #555;
+}
+
+.tentang p {
+    margin-bottom: 12px;
+}
+
+/* ===== KEAHLIAN ===== */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    color: #1b2a4a;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.skill-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* ===== PENGALAMAN & PENDIDIKAN (TIMELINE) ===== */
+.pengalaman, .pendidikan {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline-item {
+    background-color: #f9fbfd;
+    border-left: 4px solid #64b5f6;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.timeline-item h3 {
+    color: #1b2a4a;
+    font-size: 1.2rem;
+}
+
+.tempat {
+    display: inline-block;
+    color: #64b5f6;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.tanggal {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.timeline-item ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.timeline-item li {
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.timeline-item p {
+    margin-top: 8px;
+    color: #555;
+}
+
+/* ===== KONTAK ===== */
+.kontak {
+    text-align: center;
+}
+
+.kontak-info p {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.kontak-info a {
+    color: #1b2a4a;
+    font-weight: bold;
+}
+
+.kontak-info a:hover {
+    color: #64b5f6;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #1b2a4a;
+    color: #b0bec5;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   MEDIA QUERY - TAMPILAN TABLET (max 768px)
+   ============================================ */
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================
+   MEDIA QUERY - TAMPILAN HP (max 480px)
+   ============================================ */
+@media screen and (max-width: 480px) {
+
+    .hero {
+        padding: 50px 15px 70px;
+    }
+
+    .hero h1 {
+        font-size: 1.3rem;
+    }
+
+    .foto-profil {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    .timeline-item {
+        padding: 15px;
+    }
+
+    .tempat, .tanggal {
+        display: block;
+        margin-bottom: 3px;
+    }
+}
